@@ -1,4 +1,4 @@
-#Goal: Teach a single neuron the rule y = 2 * x (without tellin it the number 2)
+#Goal: Teach a single neuron the rule y = 2 * x (without telling it the number 2)
 
 #Training Data: (hours studied, expected grade)
 x = 4.0
