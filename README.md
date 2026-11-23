@@ -6,7 +6,7 @@ A minimal neural network library built from scratch in Python and Numpy, focused
 
 - [x] Single neuron training loop (linear regression via gradient descent)
 - [x] Modular core: dense layers, activation functions, and loss functions
-- [ ] Unit test for non-linear classification (XOR)
+- [x] Unit test for non-linear classification (XOR)
 - [ ] MNIST handwritten digit training and model wight serialization
 - [ ] Interactive drawing demo and CPU performance benchmarks
 

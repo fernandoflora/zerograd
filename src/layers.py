@@ -17,7 +17,7 @@ class Dense(Layer):
     def __init__(self, input_size: int, output_size: int) -> None:
         super().__init__()
         # Initialize wights randomly (scaled to keep gradients stable)
-        self.wights = np.random.randn(input_size, output_size) * np.sqrt(1.0 / input_size)
+        self.weights = np.random.randn(input_size, output_size) * np.sqrt(1.0 / input_size)
         self.bias = np.zeros((1, output_size))
 
     def forward(self, input_data: np.ndarray) -> np.ndarray:
@@ -29,7 +29,7 @@ class Dense(Layer):
         bias_gradient = np.sum(output_gradient, axis=0, keepdims=True)
 
         # Calculate the error to pass back to the previous layer
-        input_gradient = np.sum(output_gradient, self.weights.T)
+        input_gradient = np.dot(output_gradient, self.weights.T)
 
         # Update parameters (turn the knobs)
         self.weights -= learning_rate * weights_gradient
