@@ -4,13 +4,11 @@ A minimal neural network library built from scratch in Python and NumPy, focused
 
 ## Roadmap
 
-## Roadmap
-
 - [x] Single neuron training loop (linear regression via gradient descent)
 - [x] Modular core: dense layers, activation functions, and loss functions
 - [x] Unit test for non-linear classification (XOR)
 - [x] MNIST handwritten digit training and model weight serialization
-- [ ] Interactive drawing demo and CPU performance benchmarks
+- [x] Interactive drawing demo and CPU performance benchmarks
 
 ## Benchmarks (MNIST)
 
@@ -38,4 +36,10 @@ Train and evaluate on the MNIST dataset (downloads the dataset automatically and
 
 ```bash
 python3 -m examples.train_mnist
+```
+
+Run the interactive digit drawing demo (requires `python3-tk` on Linux):
+
+```bash
+python3 -m examples.draw_demo
 ```
