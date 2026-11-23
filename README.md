@@ -7,7 +7,11 @@ A minimal neural network library built from scratch in Python and NumPy, focused
 - [x] Single neuron training loop (linear regression via gradient descent)
 - [x] Modular core: dense layers, activation functions, and loss functions
 - [x] Unit test for non-linear classification (XOR)
+<<<<<<< HEAD
 - [x] MNIST handwritten digit training and model weight serialization
+=======
+- [ ] MNIST handwritten digit training and model weight serialization
+>>>>>>> d980ce0830f8685df6bd8610d84fe03e0fc103d8
 - [ ] Interactive drawing demo and CPU performance benchmarks
 
 ## Benchmarks (MNIST)
