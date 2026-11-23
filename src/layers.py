@@ -1,5 +1,6 @@
 from typing import Callable
 import numpy as np
+from src.activations import softmax
 
 class Layer:
     """Base class for all neural network layers."""
@@ -57,3 +58,14 @@ class Activation(Layer):
     def backward(self, output_gradient: np.ndarray, learning_rate: float) -> np.ndarray:
         return output_gradient * self.activation_prime(self.input)
 
+class Softmax(Layer):
+    """Applies Softmax activation. Paired with cross_entropy_prime"""
+    def forward(self, input_data: np.ndarray) -> np.ndarray:
+        self.input = input_data
+        return softmax(self.input)
+
+    def backward(self, output_gradient: np.ndarray, learning_rate: float) -> np.ndarray:
+        # cross_entropy_prime already computes the combined Softmax + Cross-Entropy gradient
+        return output_gradient
+
+    
