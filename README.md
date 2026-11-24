@@ -2,7 +2,7 @@
 
 A minimal neural network library built from scratch in Python and NumPy, focused on understanding forward propagation, backpropagation, and gradient descent without relying on high-level deep learning frameworks.
 
-![zerograd demo](img/zerograd_demo.gif)
+![zerograd demo](assets/zerograd_demo.gif)
 
 ## Roadmap
 
